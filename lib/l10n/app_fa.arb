@@ -1,0 +1,214 @@
+{
+  "@@locale": "fa",
+  "appTitle": "پیامک امن",
+  "tagline": "رمزگذاری سرتاسری · بدون سرور",
+  "myKey": "کلید شما",
+  "myKeyHint": "این کلید را برای دوستتان بفرستید تا بتواند برایتان پیام رمزشده بفرستد.",
+  "shareKey": "ارسال کلید",
+  "copy": "کپی",
+  "copied": "کپی شد",
+  "openMessage": "باز کردن پیام",
+  "noContacts": "هنوز مخاطبی ندارید",
+  "noContactsHint": "کلیدتان را برای یک دوست بفرستید، یا پیامی را که کلید او در آن است کپی کنید و «باز کردن پیام» را بزنید.",
+  "contacts": "مخاطبان",
+  "invite": "دعوت مخاطب",
+  "name": "نام",
+  "phone": "شماره تلفن (اختیاری)",
+  "save": "ذخیره",
+  "cancel": "انصراف",
+  "delete": "حذف",
+  "edit": "ویرایش",
+  "close": "بستن",
+  "reply": "پاسخ",
+  "waitingKey": "منتظر کلید",
+  "verified": "تأییدشده",
+  "unverified": "تأییدنشده",
+  "composeHint": "پیام محرمانه…",
+  "sendSms": "ارسال با پیامک",
+  "copyEncrypted": "کپی متن رمزشده",
+  "smsCount": "{chars} نویسه · {parts} پیامک",
+  "@smsCount": {
+    "placeholders": {
+      "chars": {
+        "type": "String"
+      },
+      "parts": {
+        "type": "String"
+      }
+    }
+  },
+  "safetyNumber": "کد امنیتی",
+  "safetyHint": "این کد را تلفنی یا حضوری با {name} مقایسه کنید. روی هر دو گوشی باید یکی باشد.",
+  "@safetyHint": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "markVerified": "کدها یکی است",
+  "unmarkVerified": "لغو تأیید",
+  "nothingToOpen": "متن رمزشده یا کلیدی پیدا نشد. اول پیامک را کپی کنید.",
+  "notRecognized": "این پیام با هیچ‌یک از کلیدهای شما باز نشد.",
+  "fromContact": "از {name}",
+  "@fromContact": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "toContact": "پیام شما به {name}",
+  "@toContact": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "newKeyTitle": "کلید جدید دریافت شد",
+  "newKeyBody": "این کلید مال کیست؟",
+  "newContact": "مخاطب جدید",
+  "sendMyKey": "ارسال کلید من",
+  "sendKeyBackPrompt": "{name} اضافه شد. کلیدتان را هم برایش بفرستید.",
+  "@sendKeyBackPrompt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "keyKnown": "این کلیدِ {name} است و از قبل ذخیره شده.",
+  "@keyKnown": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "ownKey": "این کلید خودتان است.",
+  "keyChangedTitle": "کلید {name} عوض شده!",
+  "@keyChangedTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "keyChangedBody": "شاید {name} گوشی یا برنامه را عوض کرده باشد، یا کسی بخواهد خودش را جای او جا بزند. قبل از پذیرش، حتماً تلفنی با او حرف بزنید.",
+  "@keyChangedBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "acceptNewKey": "پذیرش کلید جدید",
+  "deleteConfirm": "{name} حذف شود؟ پیام‌های او دیگر باز نمی‌شود.",
+  "@deleteConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "waitingBody": "تا کلید {name} نرسد نمی‌توانید برایش پیام رمزشده بفرستید. دعوت‌نامه را بفرستید و وقتی جواب داد، پیامش را کپی کنید و «باز کردن پیام» را بزنید.",
+  "@waitingBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sendInvite": "ارسال دعوت‌نامه",
+  "smsFailed": "برنامهٔ پیامک باز نشد؛ متن کپی شد.",
+  "unverifiedWarn": "هنوز کد امنیتی را با {name} مقایسه نکرده‌اید.",
+  "@unverifiedWarn": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "compare": "مقایسه",
+  "allowSmsTitle": "نمایش گفتگو",
+  "allowSmsBody": "با اجازهٔ خواندن و ارسال پیامک، پیام‌های این مخاطب همین‌جا رمزگشایی و مستقیم ارسال می‌شوند. متن باز هیچ‌جا ذخیره نمی‌شود.",
+  "allowSms": "اجازه",
+  "smsDenied": "اجازه داده نشد؛ از تنظیمات برنامه فعالش کنید.",
+  "noMessages": "هنوز پیام رمزشده‌ای با این مخاطب نیست.",
+  "sharedPhrase": "عبارت مشترک",
+  "sharedPhraseOn": "عبارت مشترک فعال است",
+  "sharedPhraseBody": "یک عبارت که حضوری با {name} قرار گذاشته‌اید. هر دو نفر باید دقیقاً همین را وارد کنند، وگرنه پیام‌ها باز نمی‌شوند. حتی اگر کسی وسط راه کلید را عوض کند، بدون این عبارت پیام‌ها را نمی‌خواند. پیام‌های قبلی با عبارت قبلی دیگر نمایش داده نمی‌شوند.",
+  "@sharedPhraseBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pickContact": "انتخاب از مخاطبین گوشی",
+  "inviteHint": "اگر نمی‌دانی این کد چیست، برنامهٔ «پیامک امن» را از بازار نصب کن: {url}",
+  "@inviteHint": {
+    "placeholders": {
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteAccepted": "دعوتت را قبول کردم؛ این کلید من است.",
+  "inviteTitle": "دعوت پیامک امن",
+  "inviteFrom": "{phone} کلیدش را برایت فرستاده. قبول می‌کنی؟ کلید تو هم خودکار برایش فرستاده می‌شود.",
+  "@inviteFrom": {
+    "placeholders": {
+      "phone": {
+        "type": "String"
+      }
+    }
+  },
+  "accept": "قبول",
+  "decline": "رد",
+  "connected": "به {name} وصل شدی",
+  "@connected": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteSent": "کلیدت فرستاده شد",
+  "ok": "تأیید",
+  "backup": "پشتیبان رمزدار",
+  "backupBody": "کلید و مخاطبینت با یک رمز عبور قفل می‌شوند. متن حاصل را جای امنی نگه دار. در گوشی جدید آن را کپی کن و «بازیابی پشتیبان» را بزن تا مخاطبین هشدار تغییر کلید نبینند. رمز را فراموش نکن؛ بدون آن هیچ‌کس نمی‌تواند بازش کند.",
+  "passphrase": "رمز عبور",
+  "passphraseAgain": "تکرار رمز عبور",
+  "passTooShort": "دست‌کم ۱۰ نویسه",
+  "passMismatch": "دو رمز یکی نیستند",
+  "working": "کمی صبر کن…",
+  "restoreBackup": "بازیابی پشتیبان",
+  "restoreHint": "متن پشتیبان را کپی کن، بعد این را بزن.",
+  "restoreBody": "رمز عبور همین پشتیبان را وارد کن.",
+  "restoreConfirm": "کلید و مخاطبین فعلی این گوشی پاک می‌شوند و پشتیبان جایشان را می‌گیرد. ادامه می‌دهی؟",
+  "restoreDone": "بازیابی شد: {count} مخاطب",
+  "backupWrong": "رمز اشتباه است یا متن پشتیبان ناقص است.",
+  "appLock": "قفل برنامه",
+  "appLockBody": "پیش از نمایش پیام‌ها اثر انگشت یا قفل صفحهٔ گوشی خواسته می‌شود.",
+  "appLockUnavailable": "برای قفل برنامه، اول در تنظیمات گوشی قفل صفحه بگذار.",
+  "unlock": "باز کردن قفل",
+  "lockedTitle": "پیامک امن قفل است",
+  "introTitle1": "کلیدت را بفرست",
+  "introBody1": "با «دعوت»، کلید عمومی‌ات با یک پیامک معمولی برای دوستت می‌رود. کلید خصوصی هیچ‌وقت از گوشی بیرون نمی‌رود.",
+  "introTitle2": "کد امنیتی را مقایسه کن",
+  "introBody2": "یک بار کد ۲۰ رقمی را حضوری یا تلفنی با هم مقایسه کنید تا مطمئن شوید کسی وسط راه کلید را عوض نکرده.",
+  "introTitle3": "امن گپ بزن",
+  "introBody3": "پیام‌ها روی گوشی رمز می‌شوند و به شکل پیامک عادی می‌روند. اپراتور فقط یک متن درهم می‌بیند. بی‌سرور، بی‌حساب کاربری.",
+  "next": "بعدی",
+  "start": "شروع",
+  "@restoreDone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "skip": "رد شدن"
+}
