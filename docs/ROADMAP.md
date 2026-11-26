@@ -21,7 +21,7 @@ READ_SMS + SEND_SMS on request: a decrypted per-contact thread that updates live
 Per-contact phrase mixed into the session key (D8). Set from the contact menu; the safety card shows when it is on.
 
 ## ✅ Phase 3d: Contact picker and automatic invites
-- Pick the phone from the system contact picker; invite text carries a Bazaar install hint
+- Pick the phone from the system contact picker; invite text carries a Bazaar install hint (no link)
 - Incoming keys are detected while the app is open: accept → our key goes back automatically → the inviter's waiting contact connects
 - Not done: detection while the app is closed (needs RECEIVE_SMS, a receiver and notifications)
 

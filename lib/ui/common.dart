@@ -41,12 +41,11 @@ Future<bool> sendSms(BuildContext context, String phone, String body) async {
   return ok;
 }
 
-const bazaarUrl = 'https://cafebazaar.ir/app/ir.securesms.secure_sms';
-
 /// Key first (the app finds it anywhere in the text), then a hint for people without the app.
+/// No URL: Iranian carriers filter SMS that contain links.
 String inviteText(BuildContext context, Vault v, {bool accepted = false}) {
   final l = context.l;
-  return '${v.me.invite()}\n${accepted ? '${l.inviteAccepted}\n' : ''}${l.inviteHint(bazaarUrl)}';
+  return '${v.me.invite()}\n${accepted ? '${l.inviteAccepted}\n' : ''}${l.inviteHint}';
 }
 
 /// Sends our key: directly when SMS permission is granted, else through the SMS app.

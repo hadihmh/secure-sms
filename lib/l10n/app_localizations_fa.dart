@@ -218,9 +218,8 @@ class AppLocalizationsFa extends AppLocalizations {
   String get pickContact => 'انتخاب از مخاطبین گوشی';
 
   @override
-  String inviteHint(String url) {
-    return 'اگر نمی‌دانی این کد چیست، برنامهٔ «پیامک امن» را از بازار نصب کن: $url';
-  }
+  String get inviteHint =>
+      'اگر نمی‌دانی این کد چیست، برنامهٔ «پیامک امن» را از بازار نصب کن.';
 
   @override
   String get inviteAccepted => 'دعوتت را قبول کردم؛ این کلید من است.';

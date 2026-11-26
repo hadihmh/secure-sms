@@ -219,9 +219,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get pickContact => 'Pick from contacts';
 
   @override
-  String inviteHint(String url) {
-    return 'Don\'t know what this code is? Install the Secure SMS app from Bazaar: $url';
-  }
+  String get inviteHint =>
+      'Don\'t know what this code is? Install the Secure SMS app from Bazaar.';
 
   @override
   String get inviteAccepted => 'I accepted your invite; this is my key.';

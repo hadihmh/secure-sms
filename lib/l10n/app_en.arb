@@ -60,7 +60,7 @@
   "sharedPhraseOn": "Shared phrase is on",
   "sharedPhraseBody": "A phrase you agreed on with {name} in person. Both of you must enter exactly the same one, or messages won't open. Even if someone swaps the key in transit, they can't read messages without it. Messages sent with an earlier phrase stop showing.",
   "pickContact": "Pick from contacts",
-  "inviteHint": "Don't know what this code is? Install the Secure SMS app from Bazaar: {url}",
+  "inviteHint": "Don't know what this code is? Install the Secure SMS app from Bazaar.",
   "inviteAccepted": "I accepted your invite; this is my key.",
   "inviteTitle": "Secure SMS invite",
   "inviteFrom": "{phone} sent you their key. Accept? Your key is sent back automatically.",

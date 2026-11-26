@@ -461,8 +461,8 @@ abstract class AppLocalizations {
   /// No description provided for @inviteHint.
   ///
   /// In fa, this message translates to:
-  /// **'اگر نمی‌دانی این کد چیست، برنامهٔ «پیامک امن» را از بازار نصب کن: {url}'**
-  String inviteHint(String url);
+  /// **'اگر نمی‌دانی این کد چیست، برنامهٔ «پیامک امن» را از بازار نصب کن.'**
+  String get inviteHint;
 
   /// No description provided for @inviteAccepted.
   ///
