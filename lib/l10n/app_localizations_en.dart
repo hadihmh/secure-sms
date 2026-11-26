@@ -193,7 +193,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get allowSmsBody =>
-      'Allow reading and sending SMS to decrypt this contact\'s messages here and send directly. Plaintext is never stored.';
+      'With SMS permission, this contact\'s messages are decrypted right here and sent directly, and you\'re alerted when a secure message arrives while the app is closed (the text is never shown). Plaintext is never stored.';
 
   @override
   String get allowSms => 'Allow';

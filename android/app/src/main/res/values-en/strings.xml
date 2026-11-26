@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_channel">Secure messages</string>
+    <string name="alert_message">New secure message</string>
+    <string name="alert_key">Secure SMS key received</string>
+</resources>

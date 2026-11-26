@@ -2,6 +2,9 @@
     <!-- Show the decrypted thread and send directly; never needed to be the default SMS app. -->
     <uses-permission android:name="android.permission.READ_SMS"/>
     <uses-permission android:name="android.permission.SEND_SMS"/>
+    <!-- Alert "new secure message" while the app is closed; the text is never shown. -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <application
         android:label="پیامک امن"
         android:allowBackup="false"
@@ -40,6 +43,12 @@
                 <data android:mimeType="text/plain"/>
             </intent-filter>
         </activity>
+        <receiver android:name=".SmsAlert" android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
         <meta-data

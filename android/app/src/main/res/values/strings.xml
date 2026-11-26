@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alert_channel">پیام‌های امن</string>
+    <string name="alert_message">پیام امن جدید</string>
+    <string name="alert_key">کلید پیامک امن رسید</string>
+</resources>

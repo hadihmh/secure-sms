@@ -17,6 +17,7 @@ The user's normal SMS app is the transport; this app only encrypts, decrypts, an
 | D8 | ASCII-only wire format (base64url) | Stays in GSM-7: 160 chars per SMS instead of 70 for Unicode |
 | D9 | State: one `Vault` ChangeNotifier | Small app; no state-management dependency needed |
 | D10 | Encrypted backup as text (`#SB1:`), Argon2id | The only way the identity leaves the phone, and only under a passphrase (≥10 chars, normalized like D8). Argon2id (19 MiB, t=2, p=1) runs in its own isolate. Text, not a file, so it travels through any share target and is restored through the same paste/share path |
+| D12 | Closed-app alerts: RECEIVE_SMS receiver + a notification | A manifest receiver sees `#SK1:`/`#SM1:` in incoming SMS while the app isn't on screen and shows "new secure message / key received" with the sender's number. It never decrypts (the keystore stays in the app) and never shows text. The lock screen shows the title only. One alert per sender; opening the app clears them. POST_NOTIFICATIONS (Android 13+) is optional |
 | D11 | Optional app lock (`local_auth`, off by default) | Device biometrics or PIN before anything shows. Re-locks after 30 s in the background, so the contact picker and SMS app hand-off don't re-lock. It covers every route via `MaterialApp.builder`. A phone without a screen lock can't enable it, and if the lock is later removed the app opens rather than locking the user out |
 
 ## Wire format v1

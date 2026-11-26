@@ -1,6 +1,7 @@
 package ir.securesms.secure_sms
 
 import android.Manifest
+import android.app.NotificationManager
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.database.ContentObserver
@@ -24,7 +25,9 @@ class MainActivity : FlutterFragmentActivity() {
     private var permResult: MethodChannel.Result? = null
     private var pickResult: MethodChannel.Result? = null
     private val smsUri = Uri.parse("content://sms")
-    private val perms = arrayOf(Manifest.permission.READ_SMS, Manifest.permission.SEND_SMS)
+    private val perms = arrayOf(Manifest.permission.READ_SMS, Manifest.permission.SEND_SMS, Manifest.permission.RECEIVE_SMS)
+    // Asked with the SMS permissions but optional: denying it only loses the closed-app alerts.
+    private val ask = if (Build.VERSION.SDK_INT >= 33) perms + Manifest.permission.POST_NOTIFICATIONS else perms
     private var observing = false
     private val observer = object : ContentObserver(Handler(Looper.getMainLooper())) {
         override fun onChange(selfChange: Boolean) { sms?.invokeMethod("changed", null) }
@@ -50,7 +53,7 @@ class MainActivity : FlutterFragmentActivity() {
                     "granted" -> result.success(granted())
                     "request" -> if (granted()) result.success(true) else {
                         permResult = result
-                        requestPermissions(perms, 7)
+                        requestPermissions(ask, 7)
                     }
                     "senderOf" -> result.success(if (granted()) senderOf(call.argument<String>("text")!!) else null)
                     "list" -> if (!granted()) result.success(emptyList<Any>()) else result.success(list(call.argument<String>("tag") ?: "#SM1:"))
@@ -118,6 +121,19 @@ class MainActivity : FlutterFragmentActivity() {
         pickResult?.success(row)
         pickResult = null
     }
+
+    override fun onResume() {
+        super.onResume()
+        visible = true
+        getSystemService(NotificationManager::class.java).cancelAll() // the app is open now
+    }
+
+    override fun onPause() {
+        visible = false
+        super.onPause()
+    }
+
+    companion object { @Volatile var visible = false }
 
     override fun onDestroy() {
         if (observing) contentResolver.unregisterContentObserver(observer)

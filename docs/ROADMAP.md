@@ -23,18 +23,19 @@ Per-contact phrase mixed into the session key (D8). Set from the contact menu; t
 ## ✅ Phase 3d: Contact picker and automatic invites
 - Pick the phone from the system contact picker; invite text carries a Bazaar install hint (no link)
 - Incoming keys are detected while the app is open: accept → our key goes back automatically → the inviter's waiting contact connects
-- Not done: detection while the app is closed (needs RECEIVE_SMS, a receiver and notifications)
 
 ## ✅ Phase 4a: Safety and first run
 - Encrypted backup/restore (`#SB1:`, Argon2id) to move identity + contacts to a new phone (D10)
 - Optional app lock: biometrics or device PIN, off by default (D11)
 - Bundled Vazirmatn font; a first-run explainer (3 cards: send key → compare code → chat)
 
+## ✅ Phase 4b-1: Closed-app alerts
+- RECEIVE_SMS receiver + notification for incoming keys and messages, never the text (D12)
+
 ## Phase 4b: Release (next)
 - App icon and name artwork
 - Release signing and store listing. iOS build on a Mac with signing
 - QR code of the safety number for in-person checks (`qr_flutter`; scanning needs a camera library, so weigh its size first)
-- Invite and message alerts while the app is closed (RECEIVE_SMS receiver + notifications; say "new secure message from X", never the text)
 
 ## Phase 5: Optional, only if needed
 - **Forward secrecy**: a ratchet over SMS is fragile (lost or reordered SMS). A cheaper option is to rotate the identity key manually.

@@ -413,7 +413,7 @@ abstract class AppLocalizations {
   /// No description provided for @allowSmsBody.
   ///
   /// In fa, this message translates to:
-  /// **'با اجازهٔ خواندن و ارسال پیامک، پیام‌های این مخاطب همین‌جا رمزگشایی و مستقیم ارسال می‌شوند. متن باز هیچ‌جا ذخیره نمی‌شود.'**
+  /// **'با اجازهٔ پیامک، پیام‌های این مخاطب همین‌جا رمزگشایی و مستقیم ارسال می‌شوند و وقتی برنامه بسته است، رسیدن پیام امن خبر داده می‌شود (بدون نشان دادن متن). متن باز هیچ‌جا ذخیره نمی‌شود.'**
   String get allowSmsBody;
 
   /// No description provided for @allowSms.
